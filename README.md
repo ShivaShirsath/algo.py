@@ -10,6 +10,7 @@ All Algorithms in PythonPython
 ```python
 import collections
 
+# BFS algorithm
 def bfs(graph, root):
     print("Graph:", graph, "\nRoot:", root, "\n", end="Breadth First Traversal: ")
     visited, queue = {root}, collections.deque([root])
@@ -50,26 +51,27 @@ bfs(
 ### DFS algorithm
 
 ```python
-def dfs(visited=set(), graph, root):
-    # function for dfs 
-    if root not in visited:
-        print(root, end=" ")
-        visited.add(root)
-        for node in graph[root]:
-            dfs(visited, graph, node)
+# DFS algorithm
+def dfs(graph, root):
+    visited=set()
+    def DFS(root):
+        # function for dfs 
+        if root not in visited:
+            print(root, end=" ")
+            visited.add(root)
+            for node in graph[ root ]:
+                DFS(node)
 
-graph = {
-  5 : [3, 7],
-  3 : [2,4],
-  7 : [8],
-  2 : [],
-  4 : [8],
-  8 : []
-}
-
-root = 5
-
-print("Graph:", graph, "\nRoot: ", root, end="\nDepth First Search: ")
-
-dfs(visited, graph, root)
+    print("Graph:", graph, "\nRoot: ", root, end="\nDepth First Search: ")
+    
+    DFS(root)
+    
+dfs({
+      5 : [3, 7],
+      3 : [2,4],
+      7 : [8],
+      2 : [],
+      4 : [8],
+      8 : []
+    }, 5)
 ```
