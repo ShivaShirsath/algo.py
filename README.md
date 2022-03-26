@@ -10,7 +10,6 @@ All Algorithms in PythonPython
 ```python
 import collections
 
-# BFS algorithm
 def bfs(graph, root):
     print("Graph:", graph, "\nRoot:", root, "\n", end="Breadth First Traversal: ")
     visited, queue = {root}, collections.deque([root])
