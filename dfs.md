@@ -1,5 +1,6 @@
 # DFS algorithm
 
+```python
 def dfs(visited=set(), graph, root):
     # function for dfs 
     if root not in visited:
@@ -22,3 +23,4 @@ root = 5
 print("Graph:", graph, "\nRoot: ", root, end="\nDepth First Search: ")
 
 dfs(visited, graph, root)
+```
