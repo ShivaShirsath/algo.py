@@ -54,7 +54,6 @@ bfs(
 def dfs(graph, root):
     visited=set()
     def DFS(root):
-        # function for dfs 
         if root not in visited:
             print(root, end=" ")
             visited.add(root)
