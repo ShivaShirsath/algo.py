@@ -2,7 +2,6 @@
 
 ```python
 def dfs(visited=set(), graph, root):
-    # function for dfs 
     if root not in visited:
         print(root, end=" ")
         visited.add(root)
