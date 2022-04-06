@@ -1,6 +1,7 @@
 # DFS algorithm
 
-```python# DFS algorithm
+```python
+# DFS algorithm
 def dfs(graph, root):
     visited=set()
     def DFS(root):
