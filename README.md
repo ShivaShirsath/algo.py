@@ -117,24 +117,20 @@ def solveNQUtil(board, col):
 	for i in range(N):
 		if isSafe(board, i, col):
 			board[i][col] = 1
-			if solveNQUtil(board, col + 1) == True:
+			if solveNQUtil(board, col + 1):
 				return True
 			board[i][col] = 0
 	return False
 
 def solveNQ():
-	board = []
-  for i in range(N):
-    board.append([])
-    for j in range(N):
-      board[i].append(0)
-
+	board=list()
+	for i in range(N):
+		board.append(list()) 
+		for j in range(N):
+			board[i].append(0)
 	if not solveNQUtil(board, 0) :
 		print ("Solution does not exist")
-		return False
-
 	printSolution(board)
-	return True
 
 solveNQ()
 ```
