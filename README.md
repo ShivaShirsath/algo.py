@@ -5,6 +5,8 @@ All Algorithms in PythonPython
   + [Breath First Search](#bfs-algorithm)
 
   + [Depth First Search](#dfs-algorithm)
+  
+  + [N Queen Problem using BackTracking](#N-Queen-Problem-using-BackTracking)
 
 # BFS algorithm
 ```python
@@ -87,7 +89,7 @@ dfs(
 )
 ```
 
-### N Queen Problem using backtracking
+### N Queen Problem using BackTracking
 
 ```python
 global N
