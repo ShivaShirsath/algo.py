@@ -2,11 +2,13 @@
 All Algorithms in PythonPython
 
 + Travalsal 
+
   + [Breath First Search](#bfs-algorithm)
 
   + [Depth First Search](#dfs-algorithm)
   
-  + [N Queen Problem using BackTracking](#N-Queen-Problem-using-BackTracking)
+  
++ [N Queen Problem using BackTracking](#N-Queen-Problem-using-BackTracking)
 
 # BFS algorithm
 ```python
